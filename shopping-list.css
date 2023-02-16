@@ -1,0 +1,13 @@
+body{
+	margin: 20px;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+.delbutton{
+	margin-left: 5px;
+}
+
+
