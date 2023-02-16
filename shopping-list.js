@@ -2,7 +2,21 @@ var ul = document.getElementsByTagName("ul")[0];
 var input = document.getElementById("userinput");
 var button = document.getElementsByTagName("button")[0];
 
-ul.addEventListener("click",function(){
+// ul.addEventListener("click",function(){   ////// burda function(x) yazip event yerine x de yazabilirsin
+// 	console.log("CLICK!!!");
+// 	console.log(event.target.nodeName)
+
+// 	if(event.target.className == "delbutton") { ////////  DELETE ITEM
+// 		event.target.parentElement.remove()
+// 	}
+
+// 	if(event.target.nodeName == "LI") {
+// 		event.target.classList.toggle("done")   ////////  DONE ITEM 
+// 	}
+// })
+
+
+ul.onclick = function(){   ////// burda function(x) yazip event yerine x de yazabilirsin
 	console.log("CLICK!!!");
 	console.log(event.target.nodeName)
 
@@ -13,7 +27,7 @@ ul.addEventListener("click",function(){
 	if(event.target.nodeName == "LI") {
 		event.target.classList.toggle("done")   ////////  DONE ITEM 
 	}
-})
+}
 
 /////////////////////////////////////////////////////////  ADD ITEM
 button.addEventListener("click",additemclick)

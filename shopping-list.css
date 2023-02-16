@@ -1,4 +1,5 @@
 body{
+	font-size: 22px;
 	margin: 20px;
 }
 
@@ -10,4 +11,7 @@ body{
 	margin-left: 5px;
 }
 
+input , button {
+	font-size: 15px;
+}
 
